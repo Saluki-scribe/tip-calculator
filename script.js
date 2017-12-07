@@ -7,6 +7,14 @@ document.getElementById("each").style.display = "none";
 
 document.getElementById("calculate").onclick = function() { calculateTip(); };
 
+//Tip calculation function
+
 function calculateTip() {
-    window.alert("You called, madam?");
+    // Store data of inputs
+
+    var billAmount = document.getElementById("bill").value;
+    var serviceQuality = document.getElementById("serviceQuality").value;
+    var numPeople = document.getElementById("totalPeople").value;
+
+    window.alert("Your amount is $" + billAmount + ", and your selected quality is " + serviceQuality + ". There are " + numPeople + " in your party.");
 }

@@ -16,10 +16,10 @@
                 <h1 id="header">Tip Calculator</h1>
                     
                 <label for="bill"><h3>How much was your bill?</h3></label>
-                <span class="minor-text">$ </span><input type="text" name="bill">
+                <span class="minor-text">$ </span><input type="text" id="bill">
                 
-                <label><h3>How was your service?</h3></label>
-                <select>
+                <label for="serviceQuality"><h3>How was your service?</h3></label>
+                <select id="serviceQuality">
                     <option disabled selected value="0">Choose an option</option>
                     <option value=".3">Outstanding (30%)</option>
                     <option value=".2">Good (20%)</option>
@@ -28,8 +28,8 @@
                     <option value=".05">Terrible (5%)</option>
                 </select>
 
-                <label for="people"><h3>How many people sharing the bill?</h3></label>
-                <input type="text" name="people"><span class="minor-text"> people</span>
+                <label for="totalPeople"><h3>How many people sharing the bill?</h3></label>
+                <input type="text" id="totalPeople"><span class="minor-text"> people</span>
     
                 <button type="button" id="calculate">CALCULATE!</button>
 
