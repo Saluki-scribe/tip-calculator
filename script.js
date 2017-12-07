@@ -28,13 +28,22 @@ function calculateTip() {
     if(numPeople === "" || numPeople <= 1) {
         numPeople = 1;
         window.alert("One person!")
-        document.getElementById("totalTip").style.display = "block";                
         document.getElementById("each").style.display = "none";
     } else {
         window.alert("More than one person!")
-        document.getElementById("totalTip").style.display = "block";        
         document.getElementById("each").style.display = "block";
     }
 
-    window.alert("Your amount is $" + billAmount + ", and your selected quality is " + serviceQuality + ". There are " + numPeople + " in your party.");
+    // Math calculation
+
+    var total = (billAmount * serviceQuality) / numPeople;
+    total = Math.round(total * 100)/100;
+    total = total.toFixed(2);
+
+    window.alert("Your total is $" + total);
+
+    // Display tip
+
+    document.getElementById("totalTip").style.display = "block";
+    document.getElementById("tip").innerHTML = total;
 }
