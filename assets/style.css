@@ -22,7 +22,7 @@ h1, h2, h3 {
     color: white;
 }
 
-input[type=submit] {
+button {
     background-color: darkred;
     border: none;
     padding: 25px 130px;
@@ -45,7 +45,7 @@ input[type=submit] {
     text-shadow: none;
 }
 
-#total {
+#totalTip {
     font-size: 25px;
     display: block;
 }

@@ -20,21 +20,21 @@
                 
                 <label><h3>How was your service?</h3></label>
                 <select>
-                    <option disabled selected>Choose an option</option>
-                    <option>Outstanding (30%)</option>
-                    <option>Good (20%)</option>
-                    <option>Okay (15%)</option>
-                    <option>Bad (10%)</option>
-                    <option>Terrible (5%)</option>
+                    <option disabled selected value="0">Choose an option</option>
+                    <option value=".3">Outstanding (30%)</option>
+                    <option value=".2">Good (20%)</option>
+                    <option value=".15">Okay (15%)</option>
+                    <option value=".1">Bad (10%)</option>
+                    <option value=".05">Terrible (5%)</option>
                 </select>
 
                 <label for="people"><h3>How many people sharing the bill?</h3></label>
                 <input type="text" name="people"><span class="minor-text"> people</span>
     
-                <input type="submit" value="CALCULATE!" id="button">
+                <button type="button" id="calculate">CALCULATE!</button>
 
-                <div id="total">
-                    <h3>Tip Amount: <span id="answer">____</span></h3>
+                <div id="totalTip">
+                    <h3>Tip Amount: <span id="tip">____</span><small> each</small></h3>
                 </div>
 
             </fieldset>

@@ -1,1 +1,1 @@
-document.getElementById("answer").innerHTML = "$5.99"
+document.getElementById("tip").innerHTML = "$5.99"
