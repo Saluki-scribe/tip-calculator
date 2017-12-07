@@ -31,7 +31,7 @@ function calculateTip() {
         document.getElementById("each").style.display = "none";
     } else {
         window.alert("More than one person!")
-        document.getElementById("each").style.display = "block";
+        document.getElementById("each").style.display = "inline";
     }
 
     // Math calculation
@@ -44,6 +44,6 @@ function calculateTip() {
 
     // Display tip
 
-    document.getElementById("totalTip").style.display = "block";
+    document.getElementById("totalTip").style.display = "inline";
     document.getElementById("tip").innerHTML = total;
 }
