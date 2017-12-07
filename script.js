@@ -27,10 +27,8 @@ function calculateTip() {
 
     if(numPeople === "" || numPeople <= 1) {
         numPeople = 1;
-        window.alert("One person!")
         document.getElementById("each").style.display = "none";
     } else {
-        window.alert("More than one person!")
         document.getElementById("each").style.display = "inline";
     }
 
@@ -39,8 +37,6 @@ function calculateTip() {
     var total = (billAmount * serviceQuality) / numPeople;
     total = Math.round(total * 100)/100;
     total = total.toFixed(2);
-
-    window.alert("Your total is $" + total);
 
     // Display tip
 
